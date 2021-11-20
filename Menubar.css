@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document for Menubars */
+* {box-sizing: border-box;}
+
+body /*General changes */
+{
+    margin: 0;
+    font-family: "Myriad Arabic", serif;
+    display: block;
+    color:  #0900ff;
+}
+
+.trsetting:hover{background-color:#9CF; cursor:pointer;}/*tr hover CSS*/
+
+.navbar /*Custom class to achieve a "glass" look*/
+{
+    overflow: hidden;
+    background-color: dimgray;
+    background-size: cover;
+    background: linear-gradient(black, lightslategray);
+    min-width: 600px;
+    color: #0900ff;
+}
+
+.navbar a /*"Glass" look effect on links hover*/
+{
+    float: left;
+    font-size: 16px;
+    color: #d8eaed;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.paddy /*Custom class to ensure no padding*/
+{
+    padding: 0 !important;
+}
+
+.dropdown /*Custom class to enable dropdown menus*/
+{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn  /*Dropdown menu and buttons CSS*/
+{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #8ffcff;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn
+{
+    background: linear-gradient(slategrey,darkgray);
+    color: white;
+}
+
+
+.dropdown-content /*CSS for dropdown menu contents */
+{
+    display: none;
+    z-index: 2;
+    position: absolute;
+    background-color: #d4f1f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-image: linear-gradient(slategrey,gray);
+}
+
+.dropdown-content a
+{
+    float: none;
+    color: #8ffcff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;z-index: 3;
+}
+
+.dropdown-content a:hover
+{
+    background-color: lightskyblue;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+/*General table CSS changes  */
+table.fixed {table-layout:fixed; width:90px;}
+table.fixed td {overflow:hidden;}
+table.fixed td:nth-of-type(1) {width:20px;}
+table.fixed td:nth-of-type(2) {width:30px;}
+table.fixed td:nth-of-type(3) {width:40px;}
+
+
